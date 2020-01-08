@@ -136,6 +136,7 @@ body {
 }
 /*RESET*/
 /*insert dimming effect from top to bottom*/
+/*Insert MIXIN for display flex and flex-direction row and width and margin*/
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #191970;
@@ -143,7 +144,7 @@ body {
 .intro {
   background-color: #FFEFD5;
   display: flex;
-  justify-self: space-between;
+  flex-direction: row;
   width: 80%;
   margin: auto;
   box-sizing: border-box;
@@ -162,5 +163,13 @@ body {
 }
 .intro div h1 h2 img {
   border: 2px solid black;
-  align-items: center;
+}
+.background {
+  background-color: #FFEFD5;
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.background div {
+  border: 2px solid black;
 }

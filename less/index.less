@@ -61,7 +61,13 @@ html, body {
 @section-background-color: #FFEFD5; /*insert dimming effect from top to bottom*/
 @hover-color: #DB7093;
 @section-font: Montserrat-MediumItalic;
-
+/*Insert MIXIN for display flex and flex-direction row and width and margin*/
+.section-setup {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin: auto;
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -70,14 +76,9 @@ body {
 
 .intro {
 	background-color: @section-background-color;
-	display: flex;
-	justify-self: space-between;
-	width: 80%;
-	margin: auto;
-	box-sizing: border-box;
-
+	.section-setup()
+	
 	div {
-		align-content: space-between;
 		border: 2px solid black;
 	
 		h1 {
@@ -90,9 +91,17 @@ body {
 			
 	img {
 		border: 2px solid black;
-		align-items: center;
 		}
 			}
 			}	
 		}
 	}
+
+.background {
+	.section-setup()
+
+	div {
+		border: 2px solid black;
+	}
+}	
+
