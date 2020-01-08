@@ -4,9 +4,16 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Derek's Portfolio</title>
 
   <link rel="stylesheet" href="css/index.css">
+
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Montserrat">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  </style>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -32,7 +39,16 @@
   <section class="background">
     <div class="about">
       <h2>A Little About Me</h2>
-      <p>PLACEHOLDER FOR ABOUT SECTION INFORMATION</p>
+      <p>My name is Derek Stiles and I currently reside in Washington D.C. 
+      I graduated from Washington College in 2017 and currently work as a management consultant at Eagle Hill Consulting.
+      For more information on my professional background, please visit my LinkedIn.
+      </p>
+      <p>Some of my favorite hobbies outside of work are exploring D.C.'s food scene and working out. 
+      I played since soccer from the age of four through college, and I'm currently training for my first marathon.
+      </p>
+      <p>Over the past year, I began learning how to code. After focusing on data science for the a few months, I realized that creating amazing products was what I wanted to do. 
+      This led me to enroll Lambda School's Web Development track to become a software engineer.
+      </p>
     </div>
     <table>
       <tr>
@@ -67,9 +83,24 @@
         <td>Paralegal</td>
       </tr>
       <tr>
-        <td>4</td>
+        <td>2013-2017</td>
+        <td>Washington College</td>
+        <td>Student</td>
       </tr>
     </table>
+  </section>
+
+  <section class="contact">
+    <h3>Contact</h3>
+    <form action="action_page.php">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="What's on your mind?"></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
   </section>
 
 

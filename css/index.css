@@ -135,6 +135,32 @@ body {
   height: 100%;
 }
 /*RESET*/
-html {
-  background-color: red;
+/*insert dimming effect from top to bottom*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #191970;
+}
+.intro {
+  background-color: #FFEFD5;
+  display: flex;
+  justify-self: space-between;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.intro div {
+  align-content: space-between;
+  border: 2px solid black;
+}
+.intro div h1 {
+  font-size: 6rem;
+  font-style: Montserrat-ExtraBold;
+}
+.intro div h1 h2 {
+  font-size: 4rem;
+  font-style: Montserrat-MediumItalic;
+}
+.intro div h1 h2 img {
+  border: 2px solid black;
+  align-items: center;
 }
