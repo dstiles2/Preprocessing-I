@@ -135,11 +135,8 @@ body {
   height: 100%;
 }
 /*RESET*/
-/*insert dimming effect from top to bottom*/
-/*Insert MIXIN for display flex and flex-direction row and width and margin*/
 .section-setup {
   display: flex;
-  flex-direction: row;
   width: 80%;
   margin: auto;
   background-color: #FFEFD5;
@@ -148,35 +145,39 @@ body {
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #191970;
+  background-color: #9f9fe9;
 }
 .intro {
-  height: 50vh;
+  height: 50%;
   display: flex;
-  flex-direction: row;
   width: 80%;
   margin: auto;
   background-color: #FFEFD5;
   margin-top: 2%;
   margin-bottom: 2%;
+  flex-direction: row;
 }
 .intro div {
+  width: 60%;
+  height: 60%;
   border: 2px solid black;
+  flex-direction: column;
 }
 .intro div h1 {
   font-size: 6rem;
   font-style: Montserrat-ExtraBold;
 }
-.intro div h1 h2 {
-  font-size: 4rem;
+.intro div h2 {
+  font-size: 3rem;
   font-style: Montserrat-MediumItalic;
 }
-.intro div h1 h2 img {
+.intro img {
+  display: flex-end;
+  height: 80%;
   border: 2px solid black;
 }
 .background {
   display: flex;
-  flex-direction: row;
   width: 80%;
   margin: auto;
   background-color: #FFEFD5;
@@ -185,7 +186,6 @@ body {
 }
 .work {
   display: flex;
-  flex-direction: row;
   width: 80%;
   margin: auto;
   background-color: #FFEFD5;
@@ -194,7 +194,6 @@ body {
 }
 .contact {
   display: flex;
-  flex-direction: row;
   width: 80%;
   margin: auto;
   background-color: #FFEFD5;

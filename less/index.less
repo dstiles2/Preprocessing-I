@@ -58,13 +58,11 @@ html, body {
 }
 /*RESET*/
 
-@section-background-color: #FFEFD5; /*insert dimming effect from top to bottom*/
+@section-background-color: #FFEFD5; 
 @hover-color: #DB7093;
 @section-font: Montserrat-MediumItalic;
-/*Insert MIXIN for display flex and flex-direction row and width and margin*/
 .section-setup {
 	display: flex;
-	flex-direction: row;
 	width: 80%;
 	margin: auto;
 	background-color: @section-background-color;
@@ -74,34 +72,41 @@ html, body {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #191970;
+	background-color:lighten(#191970, 50%);
 }
 
 .intro {
-	height: 50vh;
+	height: 50%;
 	.section-setup();
+	flex-direction: row;
 	
 	div {
+		width: 60%;
+		height: 60%;
 		border: 2px solid black;
-	
+		flex-direction: column;
+		
 		h1 {
 			font-size: 6rem;
 			font-style: Montserrat-ExtraBold;
+		}
 	
 		h2 {
-			font-size: 4rem;
+			font-size: 3rem;
 			font-style: @section-font;
-			
-	img {
-		border: 2px solid black;
 		}
-			}
-			}	
+	}
+	img {
+		display: flex-end;
+		height: 80%;
+		border: 2px solid black;
 		}
 	}
 
 .background {
 	.section-setup();
+
+
 }	
 .work {
 	.section-setup();
