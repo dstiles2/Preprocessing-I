@@ -159,9 +159,8 @@ body {
 }
 .intro div {
   width: 60%;
-  height: 60%;
-  border: 2px solid black;
   flex-direction: column;
+  align-items: space-between;
 }
 .intro div h1 {
   font-size: 6rem;
@@ -169,12 +168,11 @@ body {
 }
 .intro div h2 {
   font-size: 3rem;
-  font-style: Montserrat-MediumItalic;
+  font-style: Montserrat-Bold;
 }
 .intro img {
   display: flex-end;
   height: 80%;
-  border: 2px solid black;
 }
 .background {
   display: flex;
@@ -183,6 +181,24 @@ body {
   background-color: #FFEFD5;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+.background .about {
+  flex-direction: column;
+}
+.background .about h2 {
+  font-size: 2rem;
+  padding-bottom: 1%;
+  font-style: Montserrat-Bold;
+}
+.background .about p {
+  width: 80%;
+  font-style: Montserrat-MediumItalic;
+  padding: 0.5%;
+  box-sizing: border-box;
+}
+.background table {
+  display: flex;
+  margin: auto;
 }
 .work {
   display: flex;
