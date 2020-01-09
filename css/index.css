@@ -157,22 +157,52 @@ body {
   margin-bottom: 2%;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .intro {
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .intro div {
   width: 60%;
   flex-direction: column;
   align-items: space-between;
+  border: 2px solid black;
+}
+@media (max-width: 500px) {
+  .intro div {
+    height: 80%;
+    align-items: space-between;
+  }
 }
 .intro div h1 {
   font-size: 6rem;
   font-style: Montserrat-ExtraBold;
 }
+@media (max-width: 500px) {
+  .intro div h1 {
+    font-size: 3rem;
+  }
+}
 .intro div h2 {
   font-size: 3rem;
   font-style: Montserrat-Bold;
 }
+@media (max-width: 500px) {
+  .intro div h2 {
+    font-size: 1rem;
+  }
+}
 .intro img {
   display: flex-end;
   height: 80%;
+}
+@media (max-width: 500px) {
+  .intro img {
+    display: none;
+  }
 }
 .background {
   display: flex;
@@ -185,6 +215,11 @@ body {
 .background .about {
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .background .about {
+    width: 100%;
+  }
+}
 .background .about h2 {
   font-size: 2rem;
   padding-bottom: 1%;
@@ -195,6 +230,11 @@ body {
   font-style: Montserrat-MediumItalic;
   padding: 0.5%;
   box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .background .about p {
+    border: 2px solid black;
+  }
 }
 .background table {
   display: flex;
